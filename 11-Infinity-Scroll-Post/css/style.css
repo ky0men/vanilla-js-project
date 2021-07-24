@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #5a7cb8;
+  color: white;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.container h1 {
+  text-align: center;
+}
+.container input {
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  margin: 2rem 0;
+}
+.container input:focus {
+  outline: 0;
+}
+.post {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #3d63a7;
+  border-radius: 4px;
+  box-shadow: 8px 8px 10px #2c4061;
+  position: relative;
+}
+.number {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: #3d63a7;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+}
+
+.post-title {
+  margin-bottom: 1rem;
+}
+.loading {
+  text-align: center;
+}
+.loading span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 3px;
+  background-color: white;
+  display: none;
+}
+.loading.load span {
+  display: inline-block;
+  animation: bounce 0.8s linear infinite;
+}
+.loading span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.loading span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.loading span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.loading span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
