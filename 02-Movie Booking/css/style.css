@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+main {
+  background-color: #233;
+  color: white;
+}
+.container {
+  margin: 3rem auto;
+  max-width: 600px;
+  perspective: 700px;
+}
+
+.seat {
+  width: 16px;
+  height: 16px;
+  background-color: #555;
+  border-radius: 8px 8px 0 0;
+  margin: 4px;
+  cursor: pointer;
+}
+.seat:hover {
+  background-color: #888;
+}
+.seat.available {
+  background-color: #555;
+  cursor: default;
+}
+.seat.selected {
+  background-color: rgb(106, 206, 172);
+  cursor: default;
+}
+.seat.occupied {
+  background-color: white;
+  cursor: default;
+}
+.form-control {
+  text-align: center;
+}
+.form-control label {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+.show-case {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444;
+  width: 60%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin: 2rem auto;
+}
+.screen {
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  margin: 1rem auto;
+  box-shadow: 0 0 20px lightgray;
+  transform: rotateX(-45deg);
+}
+.seat-type {
+  display: flex;
+}
+.seat-type p {
+  margin-left: 0.5rem;
+  color: #888;
+  line-height: 24px;
+}
+.seats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.seats .row {
+  display: flex;
+}
+.row .seat:nth-child(2) {
+  margin-right: 2rem;
+}
+
+.row .seat:nth-child(6) {
+  margin-right: 2rem;
+}
+.receipt {
+  text-align: center;
+  margin: 1rem;
+}
+.receipt span {
+  color: #00aeff;
+}

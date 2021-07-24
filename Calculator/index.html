@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="mode-toggle">
+        <i class="far fa-sun"></i>
+        <i class="far fa-moon"></i>
+      </div>
+      <div class="input-field">
+        <textarea name="input" id="input" wrap="hard"></textarea>
+      </div>
+      <div class="result">
+
+      </div>
+      <div class="number-field">
+        <div class="num-pad">
+          <ul>
+            <li class="clear color-top">AC</li>
+            <li class="change-value color-top"><sup>+</sup>/<sub>-</sub></li>
+            <li class="percent color-top" data-btn="%"><i class="fas fa-percent"></i></li>
+            <li class="divide color-right" data-btn="/"><i class="fas fa-divide"></i></li>
+          </ul>
+          <ul>
+            <li class="color-number" data-btn="7">7</li>
+            <li class="color-number" data-btn="8">8</li>
+            <li class="color-number" data-btn="9">9</li>
+            <li class="time color-right" data-btn="*"><i class="fas fa-times"></i></li>
+          </ul>
+          <ul>
+            <li class="color-number" data-btn="4">4</li>
+            <li class="color-number" data-btn="5">5</li>
+            <li class="color-number" data-btn="6">6</li>
+            <li class="minus color-right" data-btn=" - "><i class="fas fa-minus"></i></li>
+          </ul>
+          <ul>
+            <li class="color-number" data-btn="1">1</li>
+            <li class="color-number" data-btn="2">2</li>
+            <li class="main-btn color-number" data-btn="3">3</li>
+            <li class="main-btn plus color-right" data-btn=" + "><i class="fas fa-plus"></i></li>
+          </ul>
+          <ul>
+            <li class="undo"><i class="fas fa-undo-alt"></i></li>
+            <li class="color-number" data-btn="0">0</li>
+            <li class="color-number" data-btn=".">.</li>
+            <li class="equa color-right"><i class="fas fa-equals"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

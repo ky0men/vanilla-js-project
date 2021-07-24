@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #34495e;
+  color: white;
+}
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1140px;
+  text-align: center;
+}
+.form-control input {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+.form-control input:focus {
+  outline: 0;
+}
+.form-control button {
+  display: inline;
+  padding: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+.search {
+  margin-left: -5px;
+  border-radius: 0 4px 4px 0;
+}
+
+.random {
+  border-radius: 4px;
+}
+
+.search:hover,
+.random:hover {
+  color: orange;
+}
+.search:focus,
+.radom:focus {
+  transform: scale(0.95);
+}
+.meal-thumbnail {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.meal {
+  margin: 1rem;
+  flex: 16%;
+  cursor: pointer;
+  /* width: 500px; */
+  /* flex: 1; */
+}
+.meal:hover img {
+  transform: scale(0.9);
+}
+.meal:hover .name {
+  color: orange;
+}
+.meal img {
+  width: 100%;
+}
+.result span {
+  color: orange;
+  margin-top: 1rem;
+}
+.meal-instruction.show {
+  border-top: 1px solid orange;
+}
+.meal-instruction h2 {
+  margin-top: 1rem;
+}
+.meal-instruction img {
+  width: 50%;
+  margin-top: 2rem;
+}
+.meal-instruction h3 {
+  color: orange;
+  margin: 2rem auto;
+}
+.decription {
+  text-align: justify;
+}
+.meal-instruction span {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  margin: 4px;
+  line-height: 2rem;
+  padding: 2px 4px;
+}

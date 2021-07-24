@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Hangman Game</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Hangman Game</h1>
+    <p>Find the hidden word - Enter the letter</p>
+    <div class="body-content">
+      <svg class="figure-container">
+        <line x1="60" y1="60" x2="140" y2="60"></line>
+        <line x1="140" y1="60" x2="140" y2="100"></line>
+        <line x1="60" y1="60" x2="60" y2="300"></line>
+        <line x1="30" y1="300" x2="90" y2="300"></line>
+        <circle class="man-figure" cx="140" cy="120" r="20"></circle>
+        <line class="man-figure" x1="140" y1="140" x2="140" y2="210"></line>
+        <line class="man-figure" x1="140" y1="210" x2="120" y2="250"></line>
+        <line class="man-figure" x1="140" y1="210" x2="160" y2="250"></line>
+        <line class="man-figure" x1="140" y1="160" x2="120" y2="190"></line>
+        <line class="man-figure" x1="140" y1="160" x2="160" y2="190"></line>
+      </svg>
+      <div class="input-text"></div>
+    </div>
+    <div class="word">
+      <!-- <div class="letter">h</div>
+      <div class="letter">e</div>
+      <div class="letter">l</div>
+      <div class="letter">l</div>
+      <div class="letter">o</div> -->
+    </div>
+    <div class="overlay">
+      <div class="popup">
+        <h3>You Win!</h3>
+        <button class="play-again">Play Again</button>
+      </div>
+    </div>
+    <div class="alert-mess">
+      You Wrong!
+    </div>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

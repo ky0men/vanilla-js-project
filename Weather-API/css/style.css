@@ -1,0 +1,27 @@
+* {
+  overflow: hidden;
+}
+.weather-card {
+  max-width: 400px;
+  margin: 2rem auto;
+}
+.weather-info {
+  background-color: white;
+}
+.table-info {
+  /* border: 1px solid lightgrey; */
+  border-radius: 4px;
+  width: 100%;
+  color: blue;
+}
+
+.table-info div:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}
+.cloud {
+  text-transform: capitalize;
+}
+.degree {
+  font-size: 2rem;
+  color: orange;
+}

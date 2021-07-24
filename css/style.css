@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  text-align: center;
+  padding: 2rem;
+}
+.project {
+  color: black;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 1rem;
+}
+.card-header {
+  font-size: 1.5rem;
+}
+.card-body img {
+  margin-bottom: 1rem;
+}
