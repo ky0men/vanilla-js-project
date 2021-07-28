@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Flash Card</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-header">
+      <h1>Flash Card</h1>
+      <button class="add-new-btn"><i class="fas fa-plus"></i> Add New Card
+      </button>
+    </div>
+
+    <div class="card">
+
+    </div>
+    <div class="navi">
+      <div class="prev-btn"><i class="fas fa-arrow-left"></i></div>
+      <div class="page"></div>
+      <div class="next-btn"><i class="fas fa-arrow-right"></i></div>
+    </div>
+    <div class="add-card-modal">
+      <h1>Add New Card</h1>
+      <form>
+        <div class="form-control">
+          <label for="question">Question</label>
+          <input type="text" id="question" placeholder="Input the question...">
+        </div>
+        <div class="form-control">
+          <label for="answer">Answer</label>
+          <input type="text" id="answer" placeholder="Input the answer...">
+        </div>
+        <button type="submit" class="add-card-submit"><i class="fas fa-plus"></i> Add Card</button>
+      </form>
+      <div class="close-modal">X</div>
+    </div>
+    <button class="clear"><i class="fas fa-trash-alt"></i> Clear Card</button>
+  </div>
+
+  <script src="./js/app.js"></script>
+
+</body>
+
+</html>
