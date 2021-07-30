@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("../img/bg.jpg") no-repeat center center / cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+.container.zoom-in {
+  animation: zoomIn 3s linear forwards;
+}
+.container.zoom-out {
+  animation: zoomOut 3s linear forwards;
+}
+.circle {
+  background-color: #333;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.circle-out {
+  background: conic-gradient(
+    #55b7a4 0%,
+    #4ca493 40%,
+    #fff 40%,
+    #fff 60%,
+    #336d62 60%,
+    #2a5b52 100%
+  );
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+  border-radius: 50%;
+}
+.pointer-container {
+  /* background-color: #2a5b52; */
+  height: 190px;
+  position: absolute;
+  top: -40px;
+  left: 140px;
+  transform-origin: bottom center;
+  animation: rotate 7.5s linear infinite;
+}
+.pointer {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  /* position: absolute;
+  top: -40px;
+  left: 140px; */
+}
+.text {
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
